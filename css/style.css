@@ -294,6 +294,11 @@ img.logo_display {
     .pad-10{
      padding: 50px;
     }
+    .copyright p {
+        color: #000;
+        text-align: center;
+    }
+    
 }
 
 
@@ -379,9 +384,13 @@ footer ul li a:hover {
 
 .socia_icons {
     float: left;
-    margin-right: 20px
+    margin-right:2.6vh;
 }
-
+@media (max-width:720px){
+    .socia_icons {
+        margin-right: 8.6vh;
+    }
+}
 .socia_icons_des {
     font-size: 12px;
     line-height: 18px;
