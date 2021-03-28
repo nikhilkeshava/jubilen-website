@@ -6,12 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
     <title>Jindal website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,8 +25,10 @@
         <!--- Navbar --->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand text-white" href="#"> <img src="images/logo.png" alt="" width="100" height="80"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                <a class="navbar-brand text-white" href="#"> <img src="images/logo.png" alt="" width="100"
+                        height="80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse"
+                    aria-controls="nvbCollapse">
                     <i class="fa fa-bars" style="color: #000;"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="nvbCollapse">
@@ -51,67 +57,71 @@
                         <button class="btn-toggle btn btn-dark">Dark-Mode</button>
                         <script>
                             const btn = document.querySelector(".btn-toggle");
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+                            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-  document.body.classList.toggle("dark-theme");
-} else if (currentTheme == "light") {
-  document.body.classList.toggle("light-theme");
-}
+                            const currentTheme = localStorage.getItem("theme");
+                            if (currentTheme == "dark") {
+                                document.body.classList.toggle("dark-theme");
+                            } else if (currentTheme == "light") {
+                                document.body.classList.toggle("light-theme");
+                            }
 
-btn.addEventListener("click", function () {
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
-      ? "light"
-      : "dark";
-  } else {
-    document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-  }
-  localStorage.setItem("theme", theme);
-});
+                            btn.addEventListener("click", function () {
+                                if (prefersDarkScheme.matches) {
+                                    document.body.classList.toggle("light-theme");
+                                    var theme = document.body.classList.contains("light-theme")
+                                        ? "light"
+                                        : "dark";
+                                } else {
+                                    document.body.classList.toggle("dark-theme");
+                                    var theme = document.body.classList.contains("dark-theme")
+                                        ? "dark"
+                                        : "light";
+                                }
+                                localStorage.setItem("theme", theme);
+                            });
                         </script>
                     </ul>
 
                     <div class="searching">
                         <center>
                             <a href="" class="search-open" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <svg id="i-search" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <svg id="i-search" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="#000"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                                     <circle cx="14" cy="14" r="12"></circle>
                                     <path d="M23 23 L30 30"></path>
                                 </svg>
                             </a>
-                           
+
                         </center>
-                       
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Search</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Search</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"><i class="fa fa-close"></i></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <form name="search" action="" method="post">
+                                            <input type="text" class="mr-search" placeholder="Search"
+                                                name="searchtitle">
+                                            <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+
                                 </div>
-                                <div class="modal-body text-center">
-                                    <form name="search" action="" method="post">
-                                        <input type="text" class="mr-search" placeholder="Search" name="searchtitle">
-                                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
-                                    </form>
-                                </div>
-                               
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!--# Navbar #-->
-        </header>
-        
+    </header>
+
 
     <div class="down-menu">
         <div class="container upper-line">
@@ -151,15 +161,62 @@ btn.addEventListener("click", function () {
                 <div class="col-md-6">
 
                     <h2>
-                        <span> Company Profile</span>
+                        <span class="profile"> Company Profile</span>
+                        <style>
+                            .profile {
+                                color: #fffbf1;
+                                text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+
+                                letter-spacing: -3px;
+                                margin: 0;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translateX(-50%) translateY(-50%);
+                            }
+
+                            .profile:before,
+                            .profile:after {
+                                content: '';
+                                padding: .9em .4em;
+                                position: absolute;
+                                left: 50%;
+                                width: 100%;
+                                top: 50%;
+                                display: block;
+                                border: 5px solid red;
+                                transform: translateX(-50%) translateY(-50%) rotate(0deg);
+                                animation: 10s infinite alternate ease-in-out tipsy;
+                            }
+
+                            .profile:before {
+                                border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+                                z-index: -1;
+                            }
+
+                            .profile:after {
+                                border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+                                box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+                            }
+
+                            @keyframes tipsy {
+                                0% {
+                                    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+                                }
+
+                                100% {
+                                    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+                                }
+                            }
+                        </style>
                     </h2>
 
                 </div>
             </div>
         </div>
     </section>
-   
-  
+
+
     <section class="content">
         <div class="bg-blue margintop-8">
             <div class="container">
@@ -180,7 +237,7 @@ btn.addEventListener("click", function () {
         </div>
     </section>
 
-
+ 
     <section class="content-padding">
         <div class="container">
             <div class="row">
@@ -252,7 +309,7 @@ btn.addEventListener("click", function () {
         </div>
     </section>
 
-   
+
     <section class="content-padding">
         <div class="container text-center pad-10">
             <h3 class="block-head mb-2">Business Strengths</h3>
@@ -264,7 +321,7 @@ btn.addEventListener("click", function () {
         <div class="container icon-box">
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/infa-icon.jpg" class="img-fluid">
+                    <img src="images/icons/infa-icon.jpg" class="img-fluid">
                     <h3>
                         Infrastructural Excellence</h3>
                     <p>
@@ -274,7 +331,7 @@ btn.addEventListener("click", function () {
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/india_map.jpg" class="img-fluid">
+                    <img src="images/icons/india_map.jpg" class="img-fluid">
                     <h3>
                         Pan India Presence</h3>
                     <p>
@@ -283,7 +340,7 @@ btn.addEventListener("click", function () {
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/tech-icon.jpg" class="img-fluid">
+                    <img src="images/icons/tech-icon.jpg" class="img-fluid">
                     <h3>
                         Technology Driven</h3>
                     <p>
@@ -294,7 +351,7 @@ btn.addEventListener("click", function () {
             </div>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/vison-icon.jpg" class="img-fluid">
+                    <img src="images/icons/vison-icon.jpg" class="img-fluid">
                     <h3>
                         Visionary Leadership</h3>
                     <p>
@@ -302,7 +359,7 @@ btn.addEventListener("click", function () {
                         at strategic levels</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/team-icon.jpg" class="img-fluid">
+                    <img src="images/icons/team-icon.jpg" class="img-fluid">
                     <h3>
                         Committed Team</h3>
                     <p>
@@ -310,7 +367,7 @@ btn.addEventListener("click", function () {
                         talented employees</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img  src="images/icons/partner-icon.jpg" class="img-fluid">
+                    <img src="images/icons/partner-icon.jpg" class="img-fluid">
                     <h3>
                         Certified Partners</h3>
                     <p>
@@ -421,7 +478,7 @@ btn.addEventListener("click", function () {
                         </span>
                     </div>
 
-                    
+
                 </div>
             </div>
 
@@ -455,10 +512,18 @@ btn.addEventListener("click", function () {
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
